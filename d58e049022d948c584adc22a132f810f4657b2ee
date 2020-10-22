@@ -1,0 +1,1 @@
+{"jobID":"71ab54c3-aa55-056b-c270-f2e28439ac89","spec":{"type":"policy","cause":{"Message":"","User":"Kostis Kapelonis \u003ckostis@codefresh.io\u003e"},"spec":{"default:deployment/simple-deployment":{"add":{"automated":"true"},"remove":null}}},"result":null}
