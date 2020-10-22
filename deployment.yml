@@ -1,7 +1,10 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: simple-deployment
+  annotations:
+    fluxcd.io/automated: 'true'
 spec:
   replicas: 1
   selector:
@@ -13,7 +16,7 @@ spec:
         app: trivial-go-web-app
     spec:
       containers:
-        - name: webserver-simple
-          image: docker.io/kostiscodefresh/simple-web-app:c88df35
-          ports:
-            - containerPort: 8080
+      - name: webserver-simple
+        image: docker.io/kostiscodefresh/simple-web-app:c88df35
+        ports:
+        - containerPort: 8080
